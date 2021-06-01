@@ -17,7 +17,7 @@ The language used is Python. We used Tensorflow 2.3.
     It process the images for epidural space (empty) from JPEG to numpy binary files
 
 * *0c-Join_datasets.ipynb* <br>
-    It concatenates the ndarray binaries from 0a and 0b.
+    It concatenates the numpy binary files from 0a and 0b.
 
 
 # Paper
