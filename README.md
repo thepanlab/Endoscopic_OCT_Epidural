@@ -40,6 +40,16 @@ The language used is Python. We used Tensorflow 2.3.
         * `xception_arg_simult.batch`: batch file for Summit
         * `xception_arg_test.batch`: batch file for Summit used for debugging
 
+For Python files, for cross-validation they should be run like this:
+
+```properties
+archResNet50_arg.py test_subject val_subject
+```
+e.g
+```properties
+archResNet50_arg.py 1 2
+
+```
 # Paper
 To be published
 
