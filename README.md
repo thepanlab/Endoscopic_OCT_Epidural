@@ -42,11 +42,11 @@ The language used is Python. We used Tensorflow 2.3.
 
 For Python files, for cross-validation they should be run like this:
 
-```properties
+```sh
 archResNet50_arg.py test_subject val_subject
 ```
 e.g
-```properties
+```sh
 archResNet50_arg.py 1 2
 
 ```
