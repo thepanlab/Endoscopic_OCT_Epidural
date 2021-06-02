@@ -1,0 +1,12 @@
+#BSUB -P BIF121
+#BSUB -W 0:20
+#BSUB -nnodes 1
+#BSUB -q debug
+#BSUB -J inceptionV3_bin4_K1_k3
+#BSUB -o /ccs/proj/bif121/epidural/inceptionV3_bin4_output/resnet50_bin4_K1_k3_%J.out
+#BSUB -e /ccs/proj/bif121/epidural/inceptionV3_bin4_output/resnet50_bin4_K1_k3_%J.err
+
+module load open-ce
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/inceptionV3_bin4_python/archInceptionV3_arg.py 1 3 > ../inceptionV3_bin4_output/output_bin4_K1_k3.txt \
+													  2> ../inceptionV3_bin4_output/error_bin4_K1_k3.txt
