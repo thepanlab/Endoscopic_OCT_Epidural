@@ -1,0 +1,235 @@
+#BSUB -P BIF121
+#BSUB -W 2:00
+#BSUB -nnodes 10
+#BSUB -q batch
+#BSUB -J xception_bin2_simult
+#BSUB -o /ccs/proj/bif121/epidural/xception_bin2_output/xception_bin2_simult_%J.out
+#BSUB -e /ccs/proj/bif121/epidural/xception_bin2_output/xception_bin2_simult_%J.err
+
+module load open-ce
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 1 2 \
+													> ../xception_bin2_output/output_K1_k2.txt \
+													2> ../xception_bin2_output/error_K1_k2.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 1 3 \
+													> ../xception_bin2_output/output_K1_k3.txt \
+													2> ../xception_bin2_output/error_K1_k3.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 1 4 \
+													> ../xception_bin2_output/output_K1_k4.txt \
+													2> ../xception_bin2_output/error_K1_k4.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 1 5 \
+													> ../xception_bin2_output/output_K1_k5.txt \
+													2> ../xception_bin2_output/error_K1_k5.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 1 6 \
+													> ../xception_bin2_output/output_K1_k6.txt \
+													2> ../xception_bin2_output/error_K1_k6.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 1 7 \
+													> ../xception_bin2_output/output_K1_k7.txt \
+													2> ../xception_bin2_output/error_K1_k7.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 1 8 \
+													> ../xception_bin2_output/output_K1_k8.txt \
+													2> ../xception_bin2_output/error_K1_k8.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 2 1 \
+													> ../xception_bin2_output/output_K2_k1.txt \
+													2> ../xception_bin2_output/error_K2_k1.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 2 3 \
+													> ../xception_bin2_output/output_K2_k3.txt \
+													2> ../xception_bin2_output/error_K2_k3.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 2 4 \
+													> ../xception_bin2_output/output_K2_k4.txt \
+													2> ../xception_bin2_output/error_K2_k4.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 2 5 \
+													> ../xception_bin2_output/output_K2_k5.txt \
+													2> ../xception_bin2_output/error_K2_k5.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 2 6 \
+													> ../xception_bin2_output/output_K2_k6.txt \
+													2> ../xception_bin2_output/error_K2_k6.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 2 7 \
+													> ../xception_bin2_output/output_K2_k7.txt \
+													2> ../xception_bin2_output/error_K2_k7.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 2 8 \
+													> ../xception_bin2_output/output_K2_k8.txt \
+													2> ../xception_bin2_output/error_K2_k8.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 3 1 \
+													> ../xception_bin2_output/output_K3_k1.txt \
+													2> ../xception_bin2_output/error_K3_k1.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 3 2 \
+													> ../xception_bin2_output/output_K3_k2.txt \
+													2> ../xception_bin2_output/error_K3_k2.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 3 4 \
+													> ../xception_bin2_output/output_K3_k4.txt \
+													2> ../xception_bin2_output/error_K3_k4.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 3 5 \
+													> ../xception_bin2_output/output_K3_k5.txt \
+													2> ../xception_bin2_output/error_K3_k5.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 3 6 \
+													> ../xception_bin2_output/output_K3_k6.txt \
+													2> ../xception_bin2_output/error_K3_k6.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 3 7 \
+													> ../xception_bin2_output/output_K3_k7.txt \
+													2> ../xception_bin2_output/error_K3_k7.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 3 8 \
+													> ../xception_bin2_output/output_K3_k8.txt \
+													2> ../xception_bin2_output/error_K3_k8.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 4 1 \
+													> ../xception_bin2_output/output_K4_k1.txt \
+													2> ../xception_bin2_output/error_K4_k1.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 4 2 \
+													> ../xception_bin2_output/output_K4_k2.txt \
+													2> ../xception_bin2_output/error_K4_k2.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 4 3 \
+													> ../xception_bin2_output/output_K4_k3.txt \
+													2> ../xception_bin2_output/error_K4_k3.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 4 5 \
+													> ../xception_bin2_output/output_K4_k5.txt \
+													2> ../xception_bin2_output/error_K4_k5.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 4 6 \
+													> ../xception_bin2_output/output_K4_k6.txt \
+													2> ../xception_bin2_output/error_K4_k6.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 4 7 \
+													> ../xception_bin2_output/output_K4_k7.txt \
+													2> ../xception_bin2_output/error_K4_k7.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 4 8 \
+													> ../xception_bin2_output/output_K4_k8.txt \
+													2> ../xception_bin2_output/error_K4_k8.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 5 1 \
+													> ../xception_bin2_output/output_K5_k1.txt \
+													2> ../xception_bin2_output/error_K5_k1.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 5 2 \
+													> ../xception_bin2_output/output_K5_k2.txt \
+													2> ../xception_bin2_output/error_K5_k2.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 5 3 \
+													> ../xception_bin2_output/output_K5_k3.txt \
+													2> ../xception_bin2_output/error_K5_k3.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 5 4 \
+													> ../xception_bin2_output/output_K5_k4.txt \
+													2> ../xception_bin2_output/error_K5_k4.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 5 6 \
+													> ../xception_bin2_output/output_K5_k6.txt \
+													2> ../xception_bin2_output/error_K5_k6.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 5 7 \
+													> ../xception_bin2_output/output_K5_k7.txt \
+													2> ../xception_bin2_output/error_K5_k7.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 5 8 \
+													> ../xception_bin2_output/output_K5_k8.txt \
+													2> ../xception_bin2_output/error_K5_k8.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 6 1 \
+													> ../xception_bin2_output/output_K6_k1.txt \
+													2> ../xception_bin2_output/error_K6_k1.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 6 2 \
+													> ../xception_bin2_output/output_K6_k2.txt \
+													2> ../xception_bin2_output/error_K6_k2.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 6 3 \
+													> ../xception_bin2_output/output_K6_k3.txt \
+													2> ../xception_bin2_output/error_K6_k3.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 6 4 \
+													> ../xception_bin2_output/output_K6_k4.txt \
+													2> ../xception_bin2_output/error_K6_k4.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 6 5 \
+													> ../xception_bin2_output/output_K6_k5.txt \
+													2> ../xception_bin2_output/error_K6_k5.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 6 7 \
+													> ../xception_bin2_output/output_K6_k7.txt \
+													2> ../xception_bin2_output/error_K6_k7.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 6 8 \
+													> ../xception_bin2_output/output_K6_k8.txt \
+													2> ../xception_bin2_output/error_K6_k8.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 7 1 \
+													> ../xception_bin2_output/output_K7_k1.txt \
+													2> ../xception_bin2_output/error_K7_k1.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 7 2 \
+													> ../xception_bin2_output/output_K7_k2.txt \
+													2> ../xception_bin2_output/error_K7_k2.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 7 3 \
+													> ../xception_bin2_output/output_K7_k3.txt \
+													2> ../xception_bin2_output/error_K7_k3.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 7 4 \
+													> ../xception_bin2_output/output_K7_k4.txt \
+													2> ../xception_bin2_output/error_K7_k4.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 7 5 \
+													> ../xception_bin2_output/output_K7_k5.txt \
+													2> ../xception_bin2_output/error_K7_k5.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 7 6 \
+													> ../xception_bin2_output/output_K7_k6.txt \
+													2> ../xception_bin2_output/error_K7_k6.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 7 8 \
+													> ../xception_bin2_output/output_K7_k8.txt \
+													2> ../xception_bin2_output/error_K7_k8.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 8 1 \
+													> ../xception_bin2_output/output_K8_k1.txt \
+													2> ../xception_bin2_output/error_K8_k1.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 8 2 \
+													> ../xception_bin2_output/output_K8_k2.txt \
+													2> ../xception_bin2_output/error_K8_k2.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 8 3 \
+													> ../xception_bin2_output/output_K8_k3.txt \
+													2> ../xception_bin2_output/error_K8_k3.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 8 4 \
+													> ../xception_bin2_output/output_K8_k4.txt \
+													2> ../xception_bin2_output/error_K8_k4.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 8 5 \
+													> ../xception_bin2_output/output_K8_k5.txt \
+													2> ../xception_bin2_output/error_K8_k5.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 8 6 \
+													> ../xception_bin2_output/output_K8_k6.txt \
+													2> ../xception_bin2_output/error_K8_k6.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/xception_bin2_python/archXception_arg.py 8 7 \
+													> ../xception_bin2_output/output_K8_k7.txt \
+													2> ../xception_bin2_output/error_K8_k7.txt &
+
+wait
