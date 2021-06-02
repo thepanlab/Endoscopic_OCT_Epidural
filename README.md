@@ -19,26 +19,92 @@ The language used is Python. We used Tensorflow 2.3.
 * `0c-Join_datasets.ipynb` <br>
     It concatenates the numpy binary files from 0a and 0b.
 
-* `Inception_5cat/`:  Code for classification of for categories
-    * `inception_5cat_python/`
-        * `inceptionV3_arg.py`
+* `Inception_5cat/`:  Code for classification for 5 categories
     * `inception_5cat_batch/`
         * `inceptionV3_arg_simult.batch`: batch file for Summit
         * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
+    * `inception_5cat_python/`
+        * `inceptionV3_arg.py`
 
 * `ResNet50_5cat/`: Code for classification for 5 categories
-    * `resnet50_5cat_python/`
-        * `archResNet50_arg.py`
     * `resnet50_5cat_batch/`
         * `resnet50_arg_simult.batch`: batch file for Summit
         * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+    * `resnet50_5cat_python/`
+        * `archResNet50_arg.py`
     
 * `Xception_5cat/`:  Code for classification for 5 categories
-    * `xception_5cat_python/`
-        * `archXception_arg.py`
     * `xception_5cat_batch/`
         * `xception_arg_simult.batch`: batch file for Summit
         * `xception_arg_test.batch`: batch file for Summit used for debugging
+    * `xception_5cat_python/`
+        * `archXception_arg.py`
+
+* `InceptionV3_binaries/`:  Code for binary classification 
+    * `inceptionV3_bin1_batch/`:
+        * `inceptionV3_arg_simult.batch`: batch file for Summit
+        * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
+    * `inceptionV3_bin1_python/`
+        * `archInceptionV3_arg.py`
+    * `inceptionV3_bin2_batch/`
+        * `inceptionV3_arg_simult.batch`: batch file for Summit
+        * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
+    * `inceptionV3_bin2_python/`
+        * `archInceptionV3_arg.py`
+    * `inceptionV3_bin3b_batch/`
+        * `inceptionV3_arg_simult.batch`: batch file for Summit
+        * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
+    * `inceptionV3_bin3b_python/`
+        * `archInceptionV3_arg.py`
+    * `inceptionV3_bin4_batch/`
+        * `inceptionV3_arg_simult.batch`: batch file for Summit
+        * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
+    * `inceptionV3_bin4_python/`
+        * `archInceptionV3_arg.py`
+
+* `ResNet50_binaries/`:  Code for binary classification 
+    * `resnet50_bin1_batch/`
+        * `resnet50_arg_simult.batch`: batch file for Summit
+        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+    * `resnet50_bin1_python/`
+        * `archResNet50_arg.py`
+    * `resnet50_bin2_batch/`
+        * `resnet50_arg_simult.batch`: batch file for Summit
+        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+    * `resnet50_bin2_python/`
+        * `archResNet50_arg.py`
+    * `resnet50_bin3b_batch/`
+        * `resnet50_arg_simult.batch`: batch file for Summit
+        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+    * `resnet50_bin3b_python/`
+        * `archResNet50_arg.py`
+    * `resnet50_bin4_batch/`
+        * `resnet50_arg_simult.batch`: batch file for Summit
+        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+    * `resnet50_bin4_python/`
+        * `archResNet50_arg.py`
+
+* `Xception_binaries/`:  Code for binary classification 
+    * `xception_bin1_batch/`
+        * `xception_arg_simult.batch`: batch file for Summit
+        * `xception_arg_test.batch`: batch file for Summit used for debugging
+    * `xception_bin1_python/`
+        * `archXception_arg.py`
+    * `xception_bin2_batch/`
+        * `xception_arg_simult.batch`: batch file for Summit
+        * `xception_arg_test.batch`: batch file for Summit used for debugging
+    * `xception_bin2_python/`
+        * `archXception_arg.py`
+    * `xception_bin3b_batch/`
+        * `xception_arg_simult.batch`: batch file for Summit
+        * `xception_arg_test.batch`: batch file for Summit used for debugging 
+    * `xception_bin3b_python/`
+        * `archXception_arg.py`
+    * `xception_bin4_batch/`
+        * `xception_arg_simult.batch`: batch file for Summit
+        * `xception_arg_test.batch`: batch file for Summit  used for debugging
+    * `xception_bin4_python/`
+        * `archXception_arg.py`
 
 For Python files, for cross-validation they should be run like this:
 
