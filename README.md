@@ -5,6 +5,9 @@ Code for the paper to be published in a future paper. The following pieces of py
 * InceptionV3
 * Xception
 
+# Dataset
+The dataset used can be found in [[1]](#1)
+
 # Prerequisites
 
 The language used is Python. We used Tensorflow 2.3.
@@ -159,6 +162,8 @@ archResNet50_arg.py 1 7
 To be published
 
 # References
+<a id = "1">[1]</a>
+Chen Wang, Qinggong Tang, & Nu Bao Tran Ton. (2021). Endoscopic OCT for epidural anesthesia [Data set]. Zenodo. http://doi.org/10.5281/zenodo.4891265
 
 # Contact
 
