@@ -109,7 +109,7 @@ The language used is Python. We used Tensorflow 2.3.
     * `xception_bin4_python/`
         * `archXception_arg.py`
 
-* `ResNet50_binaries_test/`:  Code for binary classification 
+* `ResNet50_binaries_test/`:  Code for binary classification for cross-testing 
     * `resnet50_bin1_test_batch/`
         * `resnet50_arg_test_simult.batch`: batch file for Summit
         * `resnet50_arg_test.batch`: batch file for Summit used for debugging
