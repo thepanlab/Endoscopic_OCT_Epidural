@@ -1,0 +1,31 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@batch2>
+Subject: Job 898705: <inceptionV3_5cat_simult> in cluster <summit> Done
+
+Job <inceptionV3_5cat_simult> was submitted from host <login1> by user <pcallec> in cluster <summit> at Mon Apr 12 15:16:43 2021
+Job was executed on host(s) <1*batch2>, in queue <debug>, as user <pcallec> in cluster <summit> at Mon Apr 12 15:28:58 2021
+                            <42*h35n12>
+                            <42*h35n13>
+                            <42*h35n14>
+                            <42*h35n15>
+                            <42*h35n16>
+                            <42*h35n17>
+                            <42*h35n18>
+                            <42*h36n01>
+                            <42*h36n02>
+                            <42*h36n03>
+</ccs/home/pcallec> was used as the home directory.
+</ccs/proj/bif121/epidural/inceptionV3_5cat_batch> was used as the working directory.
+Started at Mon Apr 12 15:28:58 2021
+Terminated at Mon Apr 12 15:57:10 2021
+Results reported at Mon Apr 12 15:57:10 2021
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </ccs/proj/bif121/epidural/inceptionV3_5cat_python/inceptionV3_5cat_simult_898705.err> for stderr output of this job.
+
