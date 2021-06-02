@@ -1,0 +1,11 @@
+#BSUB -P BIF121
+#BSUB -W 0:20
+#BSUB -nnodes 1
+#BSUB -q debug
+#BSUB -J resnet50_K1
+#BSUB -o /ccs/proj/bif121/epidural/resnet50_bin2_test_output/resnet50_bin2_K1_test_%J.out
+#BSUB -e /ccs/proj/bif121/epidural/resnet50_bin2_test_output/resnet50_bin2_K1_test_%J.err
+
+module load open-ce
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/resnet50_bin2_test_python/archResNet50_arg_test.py 1 1

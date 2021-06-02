@@ -1,0 +1,43 @@
+#BSUB -P BIF121
+#BSUB -W 2:00
+#BSUB -nnodes 2
+#BSUB -q batch
+#BSUB -J resnet50_simult
+#BSUB -o /ccs/proj/bif121/epidural/resnet50_bin2_test_output/resnet50_bin2_test_simult_%J.out
+#BSUB -e /ccs/proj/bif121/epidural/resnet50_bin2_test_output/resnet50_bin2_test_simult_%J.err
+
+module load open-ce
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/resnet50_bin2_test_python/archResNet50_arg_test.py 1 5 \
+													> ../resnet50_bin2_test_output/output_K1.txt \
+													2> ../resnet50_bin2_test_output/error_K1.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/resnet50_bin2_test_python/archResNet50_arg_test.py 2 7 \
+													> ../resnet50_bin2_test_output/output_K2.txt \
+													2> ../resnet50_bin2_test_output/error_K2.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/resnet50_bin2_test_python/archResNet50_arg_test.py 3 5 \
+													> ../resnet50_bin2_test_output/output_K3.txt \
+													2> ../resnet50_bin2_test_output/error_K3.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/resnet50_bin2_test_python/archResNet50_arg_test.py 4 7 \
+													> ../resnet50_bin2_test_output/output_K4.txt \
+													2> ../resnet50_bin2_test_output/error_K4.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/resnet50_bin2_test_python/archResNet50_arg_test.py 5 3 \
+													> ../resnet50_bin2_test_output/output_K5.txt \
+													2> ../resnet50_bin2_test_output/error_K5.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/resnet50_bin2_test_python/archResNet50_arg_test.py 6 5 \
+													> ../resnet50_bin2_test_output/output_K6.txt \
+													2> ../resnet50_bin2_test_output/error_K6.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/resnet50_bin2_test_python/archResNet50_arg_test.py 7 5 \
+													> ../resnet50_bin2_test_output/output_K7.txt \
+													2> ../resnet50_bin2_test_output/error_K7.txt &
+
+jsrun -n1 -g1 -a1 -c7 -bpacked:7 python /ccs/proj/bif121/epidural/resnet50_bin2_test_python/archResNet50_arg_test.py 8 4 \
+													> ../resnet50_bin2_test_output/output_K8.txt \
+													2> ../resnet50_bin2_test_output/error_K8.txt &
+
+wait
