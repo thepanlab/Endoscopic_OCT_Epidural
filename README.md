@@ -106,6 +106,36 @@ The language used is Python. We used Tensorflow 2.3.
     * `xception_bin4_python/`
         * `archXception_arg.py`
 
+* `ResNet50_binaries_test/`:  Code for binary classification 
+    * `resnet50_bin1_test_batch/`
+        * `resnet50_arg_test_simult.batch`: batch file for Summit
+        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+    * `resnet50_bin1_test_python/`
+        * `archResNet50_arg_test.py`
+    * `resnet50_bin2_test_batch/`
+        * `resnet50_arg_test_simult.batch`: batch file for Summit
+        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+    * `resnet50_bin2_test_python/`
+        * `archResNet50_arg_test.py`
+    * `resnet50_bin3b_test_batch/`
+        * `resnet50_arg_test_simult.batch`: batch file for Summit
+        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+    * `resnet50_bin3b_test_python/`
+        * `archResNet50_arg_test.py`
+    * `resnet50_bin4_test_batch/`
+        * `resnet50_arg_test_simult.batch`: batch file for Summit
+        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+    * `resnet50_bin4_test_python/`
+        * `archResNet50_arg_test.py`
+
+For Binary models:
+```
+bin1: Fat vs Ligament
+bin2: Ligament vs Flavum
+bin3: Flavum vs Epidural space (aka empty) 
+bin4: Epidural space vs Spinal cord
+```
+
 For Python files, for cross-validation they should be run like this:
 
 ```sh
@@ -114,8 +144,17 @@ archResNet50_arg.py test_subject val_subject
 e.g
 ```sh
 archResNet50_arg.py 1 2
-
 ```
+For cross-testing, they should be run like this:
+
+```sh
+archResNet50_arg.py test_subject n_epochs
+```
+e.g
+```sh
+archResNet50_arg.py 1 7
+```
+
 # Paper
 To be published
 
