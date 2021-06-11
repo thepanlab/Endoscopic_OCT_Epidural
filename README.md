@@ -159,12 +159,13 @@ archResNet50_arg.py 1 7
 ```
 
 # Video
+Normal speed
 
-https://user-images.githubusercontent.com/12533066/121708900-a1504280-ca9d-11eb-8d18-dd60dfb22ec1.mp4
+https://user-images.githubusercontent.com/12533066/121710098-d8732380-ca9e-11eb-867e-c7c21c27d7bc.mov
 
-*Slower version of video*
+Slower speed
 
-https://user-images.githubusercontent.com/12533066/121708911-a31a0600-ca9d-11eb-89f2-452bd1f26ace.mp4
+https://user-images.githubusercontent.com/12533066/121710276-107a6680-ca9f-11eb-8a9e-e6503f987491.mov
 
 # Paper
 To be published
