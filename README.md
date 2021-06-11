@@ -159,6 +159,9 @@ archResNet50_arg.py 1 7
 ```
 
 # Video
+
+![video_image_v3_cropped](https://user-images.githubusercontent.com/12533066/121712129-02c5e080-caa1-11eb-9718-62e249b1106a.png)
+
 Normal speed
 
 https://user-images.githubusercontent.com/12533066/121710098-d8732380-ca9e-11eb-867e-c7c21c27d7bc.mov
