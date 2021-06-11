@@ -158,6 +158,9 @@ e.g
 archResNet50_arg.py 1 7
 ```
 
+# Video
+![slow](video_epidural_S7.mov)
+
 # Paper
 To be published
 
