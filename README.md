@@ -159,7 +159,7 @@ archResNet50_arg.py 1 7
 ```
 
 # Video
-![slow](video_epidural_S7.mov)
+https://user-images.githubusercontent.com/12533066/121705640-757f8d80-ca9a-11eb-987a-c22b87cffdd7.mov
 
 # Paper
 To be published
