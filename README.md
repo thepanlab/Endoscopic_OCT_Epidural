@@ -163,6 +163,7 @@ archResNet50_arg.py 1 7
 https://user-images.githubusercontent.com/12533066/121708900-a1504280-ca9d-11eb-8d18-dd60dfb22ec1.mp4
 
 *Slower version of video*
+
 https://user-images.githubusercontent.com/12533066/121708911-a31a0600-ca9d-11eb-89f2-452bd1f26ace.mp4
 
 # Paper
