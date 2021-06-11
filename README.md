@@ -159,6 +159,8 @@ archResNet50_arg.py 1 7
 ```
 
 # Video
+As explained in future paper:
+"In order to simulate the use of the binary models in a realistic scenario, a stream of images is used as an input. The quantity of images of each tissue is proportional to the width of each tissue. The number of images is 120, 750, 100, 120, and 100 for fat, ligament, flavum, epidural space and spinal cord respectively. To switch from one binary model to another, we used the simple criteria of having more than 35 images out of the last 50 for class 1. Figure 8[below] shows some images from a video that can be found in the Github repository. Subject 7 was used for this video. Each image shows three important pieces of information. First, the proportion of the last 50 images that are predicted to belong to class 1. Initially, when the number of images is less than 50, the denominator shows the total number of images. Additionally, the color of fraction follows traffic lights colors. It changes from green to yellow at 26 and from yellow to red at 35. Second, the current classifier. Lastly, the truth and predicted label. The switch of binary classifier occurs when the number of images predicted as class 1 reaches 35. The fraction doesn’t appear anymore when the last classifier is reached"
 
 ![video_image_S7_cropped](https://user-images.githubusercontent.com/12533066/121713363-66044280-caa2-11eb-8015-6233f26695a5.png)
 
