@@ -13,123 +13,124 @@ The dataset used can be found in [[1]](#1)
 The language used is Python. We used Tensorflow 2.3.
 
 # Structure:
-* `0a-Read_images.ipynb` <br>
-    It process the images for tissues: fat, ligament, flavum ,and spinal cord from JPEG to numpy binary files
+* `Classification`
+    * `0a-Read_images.ipynb` <br>
+        It process the images for tissues: fat, ligament, flavum ,and spinal cord from JPEG to numpy binary files
 
-* `0b-Read_new_class.ipynb` <br>
-    It process the images for epidural space (empty) from JPEG to numpy binary files
+    * `0b-Read_new_class.ipynb` <br>
+        It process the images for epidural space (empty) from JPEG to numpy binary files
 
-* `0c-Join_datasets.ipynb` <br>
-    It concatenates the numpy binary files from 0a and 0b.
+    * `0c-Join_datasets.ipynb` <br>
+        It concatenates the numpy binary files from 0a and 0b.
 
-* `Inception_5cat/`:  Code for classification for 5 categories
-    * `inception_5cat_batch/`
-        * `inceptionV3_arg_simult.batch`: batch file for Summit
-        * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
-    * `inception_5cat_python/`
-        * `inceptionV3_arg.py`
+    * `Inception_5cat/`:  Code for classification for 5 categories
+        * `inception_5cat_batch/`
+            * `inceptionV3_arg_simult.batch`: batch file for Summit
+            * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
+        * `inception_5cat_python/`
+            * `inceptionV3_arg.py`
 
-* `ResNet50_5cat/`: Code for classification for 5 categories
-    * `resnet50_5cat_batch/`
-        * `resnet50_arg_simult.batch`: batch file for Summit
-        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
-    * `resnet50_5cat_python/`
-        * `archResNet50_arg.py`
-    
-* `Xception_5cat/`:  Code for classification for 5 categories
-    * `xception_5cat_batch/`
-        * `xception_arg_simult.batch`: batch file for Summit
-        * `xception_arg_test.batch`: batch file for Summit used for debugging
-    * `xception_5cat_python/`
-        * `archXception_arg.py`
+    * `ResNet50_5cat/`: Code for classification for 5 categories
+        * `resnet50_5cat_batch/`
+            * `resnet50_arg_simult.batch`: batch file for Summit
+            * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+        * `resnet50_5cat_python/`
+            * `archResNet50_arg.py`
+        
+    * `Xception_5cat/`:  Code for classification for 5 categories
+        * `xception_5cat_batch/`
+            * `xception_arg_simult.batch`: batch file for Summit
+            * `xception_arg_test.batch`: batch file for Summit used for debugging
+        * `xception_5cat_python/`
+            * `archXception_arg.py`
 
-* `InceptionV3_binaries/`:  Code for binary classification 
-    * `inceptionV3_bin1_batch/`:
-        * `inceptionV3_arg_simult.batch`: batch file for Summit
-        * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
-    * `inceptionV3_bin1_python/`
-        * `archInceptionV3_arg.py`
-    * `inceptionV3_bin2_batch/`
-        * `inceptionV3_arg_simult.batch`: batch file for Summit
-        * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
-    * `inceptionV3_bin2_python/`
-        * `archInceptionV3_arg.py`
-    * `inceptionV3_bin3b_batch/`
-        * `inceptionV3_arg_simult.batch`: batch file for Summit
-        * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
-    * `inceptionV3_bin3b_python/`
-        * `archInceptionV3_arg.py`
-    * `inceptionV3_bin4_batch/`
-        * `inceptionV3_arg_simult.batch`: batch file for Summit
-        * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
-    * `inceptionV3_bin4_python/`
-        * `archInceptionV3_arg.py`
+    * `InceptionV3_binaries/`:  Code for binary classification 
+        * `inceptionV3_bin1_batch/`:
+            * `inceptionV3_arg_simult.batch`: batch file for Summit
+            * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
+        * `inceptionV3_bin1_python/`
+            * `archInceptionV3_arg.py`
+        * `inceptionV3_bin2_batch/`
+            * `inceptionV3_arg_simult.batch`: batch file for Summit
+            * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
+        * `inceptionV3_bin2_python/`
+            * `archInceptionV3_arg.py`
+        * `inceptionV3_bin3b_batch/`
+            * `inceptionV3_arg_simult.batch`: batch file for Summit
+            * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
+        * `inceptionV3_bin3b_python/`
+            * `archInceptionV3_arg.py`
+        * `inceptionV3_bin4_batch/`
+            * `inceptionV3_arg_simult.batch`: batch file for Summit
+            * `inceptionV3_arg_test.batch`: batch file for Summit used for debugging
+        * `inceptionV3_bin4_python/`
+            * `archInceptionV3_arg.py`
 
-* `ResNet50_binaries/`:  Code for binary classification 
-    * `resnet50_bin1_batch/`
-        * `resnet50_arg_simult.batch`: batch file for Summit
-        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
-    * `resnet50_bin1_python/`
-        * `archResNet50_arg.py`
-    * `resnet50_bin2_batch/`
-        * `resnet50_arg_simult.batch`: batch file for Summit
-        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
-    * `resnet50_bin2_python/`
-        * `archResNet50_arg.py`
-    * `resnet50_bin3b_batch/`
-        * `resnet50_arg_simult.batch`: batch file for Summit
-        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
-    * `resnet50_bin3b_python/`
-        * `archResNet50_arg.py`
-    * `resnet50_bin4_batch/`
-        * `resnet50_arg_simult.batch`: batch file for Summit
-        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
-    * `resnet50_bin4_python/`
-        * `archResNet50_arg.py`
+    * `ResNet50_binaries/`:  Code for binary classification 
+        * `resnet50_bin1_batch/`
+            * `resnet50_arg_simult.batch`: batch file for Summit
+            * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+        * `resnet50_bin1_python/`
+            * `archResNet50_arg.py`
+        * `resnet50_bin2_batch/`
+            * `resnet50_arg_simult.batch`: batch file for Summit
+            * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+        * `resnet50_bin2_python/`
+            * `archResNet50_arg.py`
+        * `resnet50_bin3b_batch/`
+            * `resnet50_arg_simult.batch`: batch file for Summit
+            * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+        * `resnet50_bin3b_python/`
+            * `archResNet50_arg.py`
+        * `resnet50_bin4_batch/`
+            * `resnet50_arg_simult.batch`: batch file for Summit
+            * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+        * `resnet50_bin4_python/`
+            * `archResNet50_arg.py`
 
-* `Xception_binaries/`:  Code for binary classification 
-    * `xception_bin1_batch/`
-        * `xception_arg_simult.batch`: batch file for Summit
-        * `xception_arg_test.batch`: batch file for Summit used for debugging
-    * `xception_bin1_python/`
-        * `archXception_arg.py`
-    * `xception_bin2_batch/`
-        * `xception_arg_simult.batch`: batch file for Summit
-        * `xception_arg_test.batch`: batch file for Summit used for debugging
-    * `xception_bin2_python/`
-        * `archXception_arg.py`
-    * `xception_bin3b_batch/`
-        * `xception_arg_simult.batch`: batch file for Summit
-        * `xception_arg_test.batch`: batch file for Summit used for debugging 
-    * `xception_bin3b_python/`
-        * `archXception_arg.py`
-    * `xception_bin4_batch/`
-        * `xception_arg_simult.batch`: batch file for Summit
-        * `xception_arg_test.batch`: batch file for Summit  used for debugging
-    * `xception_bin4_python/`
-        * `archXception_arg.py`
+    * `Xception_binaries/`:  Code for binary classification 
+        * `xception_bin1_batch/`
+            * `xception_arg_simult.batch`: batch file for Summit
+            * `xception_arg_test.batch`: batch file for Summit used for debugging
+        * `xception_bin1_python/`
+            * `archXception_arg.py`
+        * `xception_bin2_batch/`
+            * `xception_arg_simult.batch`: batch file for Summit
+            * `xception_arg_test.batch`: batch file for Summit used for debugging
+        * `xception_bin2_python/`
+            * `archXception_arg.py`
+        * `xception_bin3b_batch/`
+            * `xception_arg_simult.batch`: batch file for Summit
+            * `xception_arg_test.batch`: batch file for Summit used for debugging 
+        * `xception_bin3b_python/`
+            * `archXception_arg.py`
+        * `xception_bin4_batch/`
+            * `xception_arg_simult.batch`: batch file for Summit
+            * `xception_arg_test.batch`: batch file for Summit  used for debugging
+        * `xception_bin4_python/`
+            * `archXception_arg.py`
 
-* `ResNet50_binaries_test/`:  Code for binary classification for cross-testing 
-    * `resnet50_bin1_test_batch/`
-        * `resnet50_arg_test_simult.batch`: batch file for Summit
-        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
-    * `resnet50_bin1_test_python/`
-        * `archResNet50_arg_test.py`
-    * `resnet50_bin2_test_batch/`
-        * `resnet50_arg_test_simult.batch`: batch file for Summit
-        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
-    * `resnet50_bin2_test_python/`
-        * `archResNet50_arg_test.py`
-    * `resnet50_bin3b_test_batch/`
-        * `resnet50_arg_test_simult.batch`: batch file for Summit
-        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
-    * `resnet50_bin3b_test_python/`
-        * `archResNet50_arg_test.py`
-    * `resnet50_bin4_test_batch/`
-        * `resnet50_arg_test_simult.batch`: batch file for Summit
-        * `resnet50_arg_test.batch`: batch file for Summit used for debugging
-    * `resnet50_bin4_test_python/`
-        * `archResNet50_arg_test.py`
+    * `ResNet50_binaries_test/`:  Code for binary classification for cross-testing 
+        * `resnet50_bin1_test_batch/`
+            * `resnet50_arg_test_simult.batch`: batch file for Summit
+            * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+        * `resnet50_bin1_test_python/`
+            * `archResNet50_arg_test.py`
+        * `resnet50_bin2_test_batch/`
+            * `resnet50_arg_test_simult.batch`: batch file for Summit
+            * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+        * `resnet50_bin2_test_python/`
+            * `archResNet50_arg_test.py`
+        * `resnet50_bin3b_test_batch/`
+            * `resnet50_arg_test_simult.batch`: batch file for Summit
+            * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+        * `resnet50_bin3b_test_python/`
+            * `archResNet50_arg_test.py`
+        * `resnet50_bin4_test_batch/`
+            * `resnet50_arg_test_simult.batch`: batch file for Summit
+            * `resnet50_arg_test.batch`: batch file for Summit used for debugging
+        * `resnet50_bin4_test_python/`
+            * `archResNet50_arg_test.py`
 
 For Binary models:
 ```
@@ -177,8 +178,7 @@ To be published
 
 # References
 <a id = "1">[1]</a>
-Chen Wang, Qinggong Tang, & Nu Bao Tran Ton. (2021). Endoscopic OCT for epidural anesthesia [Data set]. Zenodo. http://doi.org/10.5281/zenodo.4891265
-
+Chen Wang, Qinggong Tang, Nu Bao Tran Ton, Paul Calle, Justin Reynolds, & Chongle Pan. (2021). Endoscopic OCT for epidural anesthesia [Data set]. Zenodo. http://doi.org/10.5281/zenodo.5018581
 # Contact
 
 Paul Calle - pcallec@ou.edu <br>
