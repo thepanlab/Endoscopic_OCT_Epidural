@@ -165,13 +165,14 @@ As explained in future paper:
 
 ![version_B_cropped](https://user-images.githubusercontent.com/12533066/124988699-eb2c3a00-e003-11eb-80e4-afec8efa1adc.png)
 
-Normal speed
+Fast speed
 
-https://user-images.githubusercontent.com/12533066/124988737-fa12ec80-e003-11eb-94ec-0fe642a945ac.mov
+https://user-images.githubusercontent.com/12533066/136249656-e66a1990-46de-40ad-9fe8-caa928a679f6.mov
 
-Slower speed
+Slow speed
 
-https://user-images.githubusercontent.com/12533066/124988769-09923580-e004-11eb-850f-26a5869c8d0b.mov
+https://user-images.githubusercontent.com/12533066/136249696-5e80c83b-7c3e-4033-871d-26018c6fac30.mov
+
 
 # Paper
 To be published
