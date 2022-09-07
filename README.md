@@ -1,12 +1,12 @@
 # README
 
-Code for the paper to be published in a future paper. The following pieces of python code and jupyter notebooks were used for the paper. The following architectures were used: 
+Code for the paper "Epidural anesthesia needle guidance by forward-view endoscopic optical coherence tomography and deep learning"[[1]](#1). The following pieces of python code and jupyter notebooks were used for the paper. The following architectures were used: 
 * Resnet 50
 * InceptionV3
 * Xception
 
 # Dataset
-The dataset used can be found in [[1]](#1)
+The dataset used can be found in [[2]](#2)
 
 # Prerequisites
 
@@ -175,10 +175,11 @@ https://user-images.githubusercontent.com/12533066/136249696-5e80c83b-7c3e-4033-
 
 
 # Paper
-To be published
+<a id = "1">[1]</a>
+Wang, C., Calle, P., Reynolds, J.C. et al. Epidural anesthesia needle guidance by forward-view endoscopic optical coherence tomography and deep learning. Sci Rep 12, 9057 (2022). https://doi.org/10.1038/s41598-022-12950-7
 
 # References
-<a id = "1">[1]</a>
+<a id = "2">[2]</a> 
 Chen Wang, Qinggong Tang, Nu Bao Tran Ton, Paul Calle, Justin Reynolds, & Chongle Pan. (2021). Endoscopic OCT for epidural anesthesia [Data set]. Zenodo. http://doi.org/10.5281/zenodo.5018581
 # Contact
 
