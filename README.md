@@ -1,12 +1,12 @@
 # README
 
-Code for the paper to be published in a future paper. The following pieces of python code and jupyter notebooks were used for the paper. The following architectures were used: 
+Code for the paper "Epidural anesthesia needle guidance by forward-view endoscopic optical coherence tomography and deep learning"[[1]](#1). The following pieces of python code and jupyter notebooks were used for the paper. The following architectures were used: 
 * Resnet 50
 * InceptionV3
 * Xception
 
 # Dataset
-The dataset used can be found in [[1]](#1)
+The dataset used can be found in [[2]](#2)
 
 # Prerequisites
 
@@ -170,23 +170,25 @@ archResNet50_arg.py 1 7
 
 # Video
 As explained in future paper:
-"In order to simulate the use of the binary models in a realistic scenario, a stream of images is used as an input. The quantity of images of each tissue is proportional to the width of each tissue. The number of images is 120, 750, 100, 120, and 100 for fat, ligament, flavum, epidural space and spinal cord respectively. To switch from one binary model to another, we used the simple criteria of having more than 35 images out of the last 50 for class 1. Figure 8[below] shows some images from a video that can be found in the Github repository. Subject 7 was used for this video. Each image shows three important pieces of information. First, the proportion of the last 50 images that are predicted to belong to class 1. Initially, when the number of images is less than 50, the denominator shows the total number of images. Additionally, the color of fraction follows traffic lights colors. It changes from green to yellow at 26 and from yellow to red at 35. Second, the current classifier. Lastly, the truth and predicted label. The switch of binary classifier occurs when the number of images predicted as class 1 reaches 35. The fraction doesn’t appear anymore when the last classifier is reached"
+"In order to simulate the use of the binary models in a realistic scenario, a stream of images was used as an input. The quantity of images of each tissue is proportional to the width of each tissue . The number of images was 100, 700, 100, 100, and 150 for fat, ligament, flavum, epidural space and spinal cord, respectively. To switch from one binary model to another, we used the simple criteria of having more than 35 images out of the last 50 for Class 1 (the deeper tissue type in these two classified tissues). Figure 8 showed some images from a video that can be found in the Github repository. These images are from Subject 7. Each image showed three important pieces of information. First, the proportion of the last 50 images that were predicted to belong to Class 1, e.g., Class 1 was ligament in the first Classifier and was flavum in the second Classifier. Initially, when the number of images was less than 50, the denominator shows the total number of images. Additionally, the color of fraction followed traffic lights colors. It changed from green to yellow at 26 and from yellow to red at 35. The second information was the current classifier. Last information was the truth and predicted label. The switch of binary classifier occurred when the number of images predicted as Class 1 reaches 35. The fraction did not appear anymore when the last classifier was reached. "
 
-![video_image_S7_cropped](https://user-images.githubusercontent.com/12533066/121713363-66044280-caa2-11eb-8015-6233f26695a5.png)
+![video_image_large_cropped](https://user-images.githubusercontent.com/12533066/136249903-1c787894-9066-410c-8ac3-c3502d197b14.png)
 
-Normal speed
+Fast speed
 
-https://user-images.githubusercontent.com/12533066/121710098-d8732380-ca9e-11eb-867e-c7c21c27d7bc.mov
+https://user-images.githubusercontent.com/12533066/136249656-e66a1990-46de-40ad-9fe8-caa928a679f6.mov
 
-Slower speed
+Slow speed
 
-https://user-images.githubusercontent.com/12533066/121710276-107a6680-ca9f-11eb-8a9e-e6503f987491.mov
+https://user-images.githubusercontent.com/12533066/136249696-5e80c83b-7c3e-4033-871d-26018c6fac30.mov
+
 
 # Paper
-To be published
+<a id = "1">[1]</a>
+Wang, C., Calle, P., Reynolds, J.C. et al. Epidural anesthesia needle guidance by forward-view endoscopic optical coherence tomography and deep learning. Sci Rep 12, 9057 (2022). https://doi.org/10.1038/s41598-022-12950-7
 
 # References
-<a id = "1">[1]</a>
+<a id = "2">[2]</a> 
 Chen Wang, Qinggong Tang, Nu Bao Tran Ton, Paul Calle, Justin Reynolds, & Chongle Pan. (2021). Endoscopic OCT for epidural anesthesia [Data set]. Zenodo. http://doi.org/10.5281/zenodo.5018581
 # Contact
 
