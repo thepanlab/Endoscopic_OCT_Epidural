@@ -23,6 +23,15 @@ The language used is Python. We used Tensorflow 2.3.
     * `0c-Join_datasets.ipynb` <br>
         It concatenates the numpy binary files from 0a and 0b.
 
+    * `1-Processing_results.ipynb` <br>
+        Processing results from history to obtain number of epochs, validation, etc.
+
+    * `2-Processing predictions.ipynb` <br>
+        Process predicition probabilities to obtain ROC curve.
+
+    * `3-Grad-CAM-S7.ipynb` <br>
+        GradCAM apply to subject S7 using outer loop model
+
     * `Inception_5cat/`:  Code for classification for 5 categories
         * `inception_5cat_batch/`
             * `inceptionV3_arg_simult.batch`: batch file for Summit
